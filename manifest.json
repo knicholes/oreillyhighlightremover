@@ -1,0 +1,15 @@
+{
+    "name": "O'Reilly Highlight Blocker",
+    "version": "1.0",
+    "description": "Keeps that crappy popup from ruining your reading experience!",
+    "content_scripts": [
+        {
+          "matches": [
+            "https://learning.oreilly.com/*"
+          ],
+          "js": ["background.js"],
+          "run_at": "document_idle"
+        }
+      ],
+    "manifest_version": 2
+  }
